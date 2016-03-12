@@ -1,0 +1,8 @@
+site:
+    resource: '@AppBundle/Controller/'
+    type:     annotation
+
+# Secured routes
+secured_dashboard:
+    path: /dashboard
+    defaults: { _controller: "AppBundle:Dashboard:welcome" }

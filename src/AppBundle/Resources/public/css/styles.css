@@ -1,0 +1,137 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+    padding: 60px 15px 0;
+}
+.container .credit {
+    margin: 20px 0;
+}
+
+#footer > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+code {
+    font-size: 80%;
+}body {
+    padding-top:62px;
+}
+
+body, html {
+    height:100%;
+}
+
+/* workaround bs 4 horizontal scrollbar */
+.container-fluid >.row {
+    margin-left: -15px;
+    margin-right: -10px;
+}
+
+#sidebar {
+    padding-left:0;
+}
+
+/*
+ * Off Canvas at medium breakpoint
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 48em) {
+
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+    }
+
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        left: -33%;
+    }
+
+    .row-offcanvas-left.active {
+        left: 33%;
+    }
+
+    .sidebar-offcanvas {
+        background-color:#f6f6f6;
+        position: absolute;
+        top: 0;
+        width: 33%;
+        height: 100%;
+    }
+}
+.card-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+ * Off Canvas wider at sm breakpoint
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 34em) {
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        left: -45%;
+    }
+
+    .row-offcanvas-left.active {
+        left: 45%;
+    }
+
+    .sidebar-offcanvas {
+        width: 45%;
+    }
+}
+
+
+/* responsive nav stacked liked 3.x */
+@media(max-width:34em) {
+    .navbar .navbar-brand {
+        float:none;
+        display: block;
+    }
+    .navbar .navbar-nav>.nav-item {
+        float: none;
+        margin-left: .1rem;
+    }
+    .navbar .navbar-nav {
+        float:none !important;
+    }
+}
