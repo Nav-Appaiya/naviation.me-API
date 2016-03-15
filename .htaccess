@@ -1,0 +1,4 @@
+RewriteCond %{HTTP_HOST} ^www\.naviation\.me$
+RewriteRule ^/?$ "http\:\/\/naviation\.me\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^149\.210\.236\.249
+RewriteRule (.*) http://www.naviation.me/$1 [R=301,L]
