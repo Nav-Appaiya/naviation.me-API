@@ -1,8 +1,0 @@
-types:
-    - test
-
-test:
-    type: test
-    script:
-        - composer install
-        - phpunit -c app/
